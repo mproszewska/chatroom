@@ -14,7 +14,7 @@ import java.util.Date;
 
 public class SignIn extends HttpServlet {
     final String DB_URL = "jdbc:postgresql://localhost/mpro";
-    final String USER = "mpro";
+    final String USER = "user";
     final String PASS = "pass";
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -37,7 +37,8 @@ public class SignIn extends HttpServlet {
             Statement s = conn.createStatement();
             String login = req.getParameter("login");
             String pw = req.getParameter("pw");
-
+            if(!login.matches("[a-zA-Z0-9]*")) return;
+            if(!pw.matches("[a-zA-Z0-9]*")) return;
             String query = "SELECT login FROM users WHERE login='"+login+"'";
             ResultSet rs = s.executeQuery(query);
 
@@ -59,3 +60,4 @@ public class SignIn extends HttpServlet {
         super.doGet(req,resp);
     }
 }
+
