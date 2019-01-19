@@ -1,0 +1,45 @@
+div.middle {
+  position: absolute;
+  width: 30%;
+  top: 30%;
+  left: 35%;
+ 
+}
+
+.middle-bis {
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  top: 50%;
+  left: 55%;
+  margin: -100px 0 0 -150px;
+}
+.always-middle {
+    border: solid 1px grey;
+    position: absolute;
+    top: 50px;
+    margin-left: 25%;
+    height: 270px;
+    width: 50%;
+
+}
+.textbox {
+    position:absolute;
+    border: solid 1px grey;
+    top: 325px;
+    height: 40px;
+    width: 46%;
+    resize: none;
+    right:28%;
+}
+
+.btn {
+    border: solid 1px grey;
+    position: absolute;
+    top: 425px;
+    right:24%;
+    height: 40px;
+    width: 4%;
+    margin: -100px  0 0 -100px;
+}
+
