@@ -37,7 +37,7 @@ public class SignIn extends HttpServlet {
             Statement s = conn.createStatement();
             String login = req.getParameter("login");
             String pw = req.getParameter("pw");
-            if(!login.matches("[a-zA-Z0-9]*")) return;
+            if(!login.matches("[a-zA-Z0-9 ]*")) return;
             if(!pw.matches("[a-zA-Z0-9]*")) return;
             String query = "SELECT login FROM users WHERE login='"+login+"'";
             ResultSet rs = s.executeQuery(query);
