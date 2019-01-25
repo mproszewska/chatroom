@@ -9,8 +9,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ChatMsg extends HttpServlet {
-    final String DB_URL = "jdbc:postgresql://localhost/mpro";
-    final String USER = "mpro";
+    final String DB_URL = "jdbc:postgresql://localhost/user";
+    final String USER = "user";
     final String PASS = "pass";
 
     @Override
