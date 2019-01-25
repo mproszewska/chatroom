@@ -13,7 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Chat extends HttpServlet {
-    final String DB_URL = "jdbc:postgresql://localhost/mpro";
+    final String DB_URL = "jdbc:postgresql://localhost/user";
     final String USER = "user";
     final String PASS = "pass";
 
