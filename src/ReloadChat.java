@@ -13,8 +13,8 @@ import java.util.List;
 import static java.lang.Thread.sleep;
 
 public class ReloadChat extends HttpServlet {
-    final String DB_URL = "jdbc:postgresql://localhost/mpro";
-    final String USER = "mpro";
+    final String DB_URL = "jdbc:postgresql://localhost/user";
+    final String USER = "user";
     final String PASS = "pass";
 
     @Override
