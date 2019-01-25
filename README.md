@@ -4,7 +4,7 @@ Add database to PSQL.
 ```
 psql < src/database.sql
 ```
-Set PSQL username and password in src/Chat.java. <br />
+Set PSQL username and password in src/*.java. <br />
 Compile classes:
 ```
 javac -cp lib/javax.servlet.jar -d WEB-INF/classes   src/Chat.java 
